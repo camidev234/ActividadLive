@@ -14,7 +14,7 @@ class CityTableSeeder extends Seeder
      */
     public function run(): void
     {
-        
+
         // Datos de los municipios y corregimientos de Amazonas
         $cities = [
             ['city_code' => 'LTR', 'city_name' => 'Leticia'],
@@ -178,8 +178,111 @@ class CityTableSeeder extends Seeder
             ['city_code' => 'ZARAGOZA', 'city_name' => 'Zaragoza', 'departament_id' => 2],
         ];
 
-        
-        DB::table('cities')->insert($antioquiaCities);
-    }
 
+        DB::table('cities')->insert($antioquiaCities);
+
+        $ciudades_depto_3 = [
+            ['city_code' => 'ARAUCA', 'city_name' => 'Arauca', 'departament_id' => 3],
+            ['city_code' => 'ARAUQUITA', 'city_name' => 'Arauquita', 'departament_id' => 3],
+            ['city_code' => 'CRAVO NORTE', 'city_name' => 'Cravo Norte', 'departament_id' => 3],
+            ['city_code' => 'FORTUL', 'city_name' => 'Fortul', 'departament_id' => 3],
+            ['city_code' => 'PUERTO RONDON', 'city_name' => 'Puerto Rondón', 'departament_id' => 3],
+            ['city_code' => 'SARAVENA', 'city_name' => 'Saravena', 'departament_id' => 3],
+            ['city_code' => 'TAME', 'city_name' => 'Tame', 'departament_id' => 3],
+            ['city_code' => 'ARAUQUITA', 'city_name' => 'Arauquita', 'departament_id' => 3],
+            ['city_code' => 'CRAVO NORTE', 'city_name' => 'Cravo Norte', 'departament_id' => 3],
+            ['city_code' => 'FORTUL', 'city_name' => 'Fortul', 'departament_id' => 3],
+            ['city_code' => 'PUERTO RONDON', 'city_name' => 'Puerto Rondon', 'departament_id' => 3],
+            ['city_code' => 'TAME', 'city_name' => 'Tame', 'departament_id' => 3],
+            ['city_code' => 'ARAUQUITA', 'city_name' => 'Arauquita', 'departament_id' => 3],
+            ['city_code' => 'CRAVO NORTE', 'city_name' => 'Cravo Norte', 'departament_id' => 3],
+            ['city_code' => 'FORTUL', 'city_name' => 'Fortul', 'departament_id' => 3],
+        ];
+
+        DB::table('cities')->insert($ciudades_depto_3);
+
+        $ciudades_atlantico = [
+            ['city_code' => 'BARRANQUILLA', 'city_name' => 'Barranquilla', 'departament_id' => 4],
+            ['city_code' => 'SOLEDAD', 'city_name' => 'Soledad', 'departament_id' => 4],
+            ['city_code' => 'MALAMBO', 'city_name' => 'Malambo', 'departament_id' => 4],
+            ['city_code' => 'SABANALARGA', 'city_name' => 'Sabanalarga', 'departament_id' => 4],
+            ['city_code' => 'PUERTO COLOMBIA', 'city_name' => 'Puerto Colombia', 'departament_id' => 4],
+            ['city_code' => 'GALAPA', 'city_name' => 'Galapa', 'departament_id' => 4],
+            ['city_code' => 'POLONUEVO', 'city_name' => 'Polonuevo', 'departament_id' => 4],
+            ['city_code' => 'SOLEDAD', 'city_name' => 'Soledad', 'departament_id' => 4],
+            ['city_code' => 'USIACURI', 'city_name' => 'Usiacurí', 'departament_id' => 4],
+            ['city_code' => 'CAMPO DE LA CRUZ', 'city_name' => 'Campo de la Cruz', 'departament_id' => 4],
+            ['city_code' => 'TUBARA', 'city_name' => 'Tubará', 'departament_id' => 4],
+            ['city_code' => 'JUAN DE ACOSTA', 'city_name' => 'Juan de Acosta', 'departament_id' => 4],
+            ['city_code' => 'PIOJO', 'city_name' => 'Piojó', 'departament_id' => 4],
+            ['city_code' => 'SANTA LUCIA', 'city_name' => 'Santa Lucía', 'departament_id' => 4],
+            ['city_code' => 'SUAN', 'city_name' => 'Suan', 'departament_id' => 4],
+            ['city_code' => 'SABANAGRANDE', 'city_name' => 'Sabanagrande', 'departament_id' => 4],
+            ['city_code' => 'PALMAR DE VARELA', 'city_name' => 'Palmar de Varela', 'departament_id' => 4],
+        ];
+
+        $ciudades_atlantico = [
+            ['city_code' => 'BARRANQUILLA', 'city_name' => 'Barranquilla', 'departament_id' => 4],
+            ['city_code' => 'SOLEDAD', 'city_name' => 'Soledad', 'departament_id' => 4],
+            ['city_code' => 'MALAMBO', 'city_name' => 'Malambo', 'departament_id' => 4],
+            ['city_code' => 'SABANALARGA', 'city_name' => 'Sabanalarga', 'departament_id' => 4],
+            ['city_code' => 'PUERTO COLOMBIA', 'city_name' => 'Puerto Colombia', 'departament_id' => 4],
+            ['city_code' => 'GALAPA', 'city_name' => 'Galapa', 'departament_id' => 4],
+            ['city_code' => 'POLONUEVO', 'city_name' => 'Polonuevo', 'departament_id' => 4],
+            ['city_code' => 'SOLEDAD', 'city_name' => 'Soledad', 'departament_id' => 4],
+            ['city_code' => 'USIACURI', 'city_name' => 'Usiacurí', 'departament_id' => 4],
+            ['city_code' => 'CAMPO DE LA CRUZ', 'city_name' => 'Campo de la Cruz', 'departament_id' => 4],
+            ['city_code' => 'TUBARA', 'city_name' => 'Tubará', 'departament_id' => 4],
+            ['city_code' => 'JUAN DE ACOSTA', 'city_name' => 'Juan de Acosta', 'departament_id' => 4],
+            ['city_code' => 'PIOJO', 'city_name' => 'Piojó', 'departament_id' => 4],
+            ['city_code' => 'SANTA LUCIA', 'city_name' => 'Santa Lucía', 'departament_id' => 4],
+            ['city_code' => 'SUAN', 'city_name' => 'Suan', 'departament_id' => 4],
+            ['city_code' => 'SABANAGRANDE', 'city_name' => 'Sabanagrande', 'departament_id' => 4],
+            ['city_code' => 'PALMAR DE VARELA', 'city_name' => 'Palmar de Varela', 'departament_id' => 4],
+        ];
+        DB::table('cities')->insert($ciudades_atlantico);
+
+
+        $ciudades_bolivar = [
+            ['city_code' => 'CARTAGENA', 'city_name' => 'Cartagena', 'departament_id' => 5],
+            ['city_code' => 'MAGANGUE', 'city_name' => 'Magangué', 'departament_id' => 5],
+            ['city_code' => 'TURBACO', 'city_name' => 'Turbaco', 'departament_id' => 5],
+            ['city_code' => 'ARJONA', 'city_name' => 'Arjona', 'departament_id' => 5],
+            ['city_code' => 'TURBANA', 'city_name' => 'Turbana', 'departament_id' => 5],
+            ['city_code' => 'MAHATES', 'city_name' => 'Mahates', 'departament_id' => 5],
+            ['city_code' => 'MARIA LA BAJA', 'city_name' => 'María La Baja', 'departament_id' => 5],
+            ['city_code' => 'SAN JACINTO', 'city_name' => 'San Jacinto', 'departament_id' => 5],
+            ['city_code' => 'SAN JUAN NEPOMUCENO', 'city_name' => 'San Juan Nepomuceno', 'departament_id' => 5],
+            ['city_code' => 'CICUCO', 'city_name' => 'Cicuco', 'departament_id' => 5],
+            ['city_code' => 'EL CARMEN DE BOLIVAR', 'city_name' => 'El Carmen de Bolívar', 'departament_id' => 5],
+            ['city_code' => 'MORALES', 'city_name' => 'Morales', 'departament_id' => 5],
+            ['city_code' => 'SAN JACINTO DEL CAUCA', 'city_name' => 'San Jacinto del Cauca', 'departament_id' => 5],
+            ['city_code' => 'TALAIGUA NUEVO', 'city_name' => 'Talaigua Nuevo', 'departament_id' => 5],
+            ['city_code' => 'CANTAGALLO', 'city_name' => 'Cantagallo', 'departament_id' => 5],
+        ];
+        
+        DB::table('cities')->insert($ciudades_bolivar);
+
+        $ciudades_boyaca = [
+            ['city_code' => 'TUNJA', 'city_name' => 'Tunja', 'departament_id' => 6],
+            ['city_code' => 'Duitama', 'city_name' => 'Duitama', 'departament_id' => 6],
+            ['city_code' => 'Sogamoso', 'city_name' => 'Sogamoso', 'departament_id' => 6],
+            ['city_code' => 'Paipa', 'city_name' => 'Paipa', 'departament_id' => 6],
+            ['city_code' => 'Chiquinquirá', 'city_name' => 'Chiquinquirá', 'departament_id' => 6],
+            ['city_code' => 'Tibasosa', 'city_name' => 'Tibasosa', 'departament_id' => 6],
+            ['city_code' => 'Guateque', 'city_name' => 'Guateque', 'departament_id' => 6],
+            ['city_code' => 'Socha', 'city_name' => 'Socha', 'departament_id' => 6],
+            ['city_code' => 'Moniquirá', 'city_name' => 'Moniquirá', 'departament_id' => 6],
+            ['city_code' => 'Sámaca', 'city_name' => 'Sámaca', 'departament_id' => 6],
+            ['city_code' => 'Ramiriquí', 'city_name' => 'Ramiriquí', 'departament_id' => 6],
+            ['city_code' => 'Puerto Boyacá', 'city_name' => 'Puerto Boyacá', 'departament_id' => 6],
+            ['city_code' => 'Socotá', 'city_name' => 'Socotá', 'departament_id' => 6],
+            ['city_code' => 'Garagoa', 'city_name' => 'Garagoa', 'departament_id' => 6],
+            ['city_code' => 'Sáboya', 'city_name' => 'Sáboya', 'departament_id' => 6],
+        ];
+
+        DB::table('cities')->insert($ciudades_boyaca);
+        
+
+    }
 }
