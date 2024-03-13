@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('departament_code');
             $table->string('departament_name');
+            $table->foreignId('country_id')->references('id')->on('countries');
             $table->timestamps();
         });
     }
