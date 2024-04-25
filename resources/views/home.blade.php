@@ -10,8 +10,8 @@
     @livewireStyles
 </head>
 
-<body>
-    <livewire:search-component />
+<body class="bg-gray-200">
+    <livewire:show-tickets />
     @livewireScripts
 </body>
 
