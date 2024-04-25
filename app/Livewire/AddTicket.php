@@ -16,11 +16,12 @@ class AddTicket extends Component
 
     public function saveTicket() {
         $validatedData = $this->validate([
-            'ticket_code' => 'required|min:4|max:4|string'
+            'ticket_code' => 'required|min:4|max:4|string|unique:tickets'
         ], [
             'ticket_code.required' => 'El numero de la boleta es requerido',
             'ticket_code.max' => 'El numero de la boleta debe ser de solo :max caracteres',
-            'ticket_code.min' => 'El numero de la boleta debe ser de :min caracteres'
+            'ticket_code.min' => 'El numero de la boleta debe ser de :min caracteres',
+            'ticket.unique' => 'Ya has agregado esta boleta'
         ]);
 
         $newTicket = new Ticket();
